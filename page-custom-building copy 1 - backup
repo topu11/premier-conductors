@@ -1,0 +1,381 @@
+<?php
+/* Template Name: custom building */
+get_header();
+
+$header_banner=get_field('header_banner');
+
+$banner_heading_one=get_field('banner_heading_one');
+
+$banner_heading_two=get_field('banner_heading_two');
+
+$location=get_field('location');
+
+$expertise=get_field('expertise');
+
+$after_expertise_textarea_1=get_field('after_expertise_textarea_1');
+
+$after_expertise_textarea_2=get_field('after_expertise_textarea_2');
+
+$page_center_image=get_field('page_center_image');
+
+$experience=get_field('experience');
+
+$fully_insured=get_field('fully_insured');
+
+$licensed=get_field('licensed');
+
+$after_license_text=get_field('after_license_text');
+
+$custom_home_building=get_field('custom_home_building');
+
+$luxury_home_construction=get_field('luxury_home_construction');
+
+$renovations=get_field('renovations');
+
+$our_service_section_last_line=get_field('our_service_section_last_line');
+
+$quality_vs_cost=get_field('quality_vs_cost');
+
+$timeline=get_field('timeline');
+
+$communication=get_field('communication');
+
+$what_sets_us_apart_quality=get_field('what_sets_us_apart_quality');
+
+$what_sets_us_apart_warranty=get_field('what_sets_us_apart_warranty');
+
+$what_sets_us_apart_last_line=get_field('what_sets_us_apart_last_line');
+
+$premier_process_consultation=get_field('premier_process_consultation');
+
+$premier_process_design_phase=get_field('premier_process_design_phase');
+
+$premier_process_construction=get_field('premier_process_construction');
+
+$premier_process_final_walkthrough=get_field('premier_process_final_walkthrough');
+
+$attention_realtors_high_value_partnership=get_field('attention_realtors_high_value_partnership');
+
+$attention_realtors_last_line=get_field('attention_realtors_last_line');
+
+$no_financing=get_field('no_financing');
+
+/**************Additional Fields */
+ $your_dream_home_awaits_with_title=get_field('your_dream_home_awaits_with_title');
+ $dc_premier_contractors_llc_title=get_field('dc_premier_contractors_llc_title');
+ $location_title=get_field('location_title');
+ $expertise_title=get_field('expertise_title');
+ $word_why_before_dc_premier_contractors_llc_title=get_field('word_why_before_dc_premier_contractors_llc_title');
+ $experience_title=get_field('experience_title');
+ $fully_insured_title=get_field('fully_insured_title');
+ $licensed_title=get_field('licensed_title');
+ $services_title=get_field('services_title');
+ $custom_home_building_title=get_field('custom_home_building_title');
+ $luxury_home_construction_title=get_field('luxury_home_construction_title');
+ $renovations_title=get_field('renovations_title');
+ $addressing_before_our_concern_title=get_field('addressing_before_our_concern_title');
+ $quality_cost_title=get_field('quality_cost_title');
+ $timeline_title=get_field('timeline_title');
+ $communication_title=get_field('communication_title');
+ $word_what_before_set_us_apart=get_field('word_what_before_set_us_apart');
+ $sets_us_apart_title=get_field('sets_us_apart_title');
+ $what_sets_us_apart_quality_title=get_field('what_sets_us_apart_quality_title');
+ $what_sets_us_apart_warranty=get_field('what_sets_us_apart_warranty');
+ $the_dc_premier_process_title_at_consultation_section=get_field('the_dc_premier_process_title_at_consultation_section');
+ $dc_premier_process_title=get_field('dc_premier_process_title');
+ $premier_process_consultation_title=get_field('premier_process_consultation_title');
+ $premier_process_design_phase_title=get_field('premier_process_design_phase_title');
+ $premier_process_construction_title=get_field('premier_process_construction_title');
+ $premier_process_final_walkthrough_title=get_field('premier_process_final_walkthrough_title');
+ $attention_first_title=get_field('attention_first_title');
+ $realtors_second_title=get_field('realtors_second_title');
+
+ $high_value_partnership_title=get_field('high_value_partnership_title');
+ $financing_and_costs_title=get_field('financing_and_costs_title');
+ $no_financing_title=get_field('no_financing_title');
+ $your_concerns_title=get_field('your_concerns_title');
+
+
+
+?>
+<style>
+    .breadcrumb__inner {
+  text-align: center;
+  padding: 25px;
+  background-image: url("<?=$header_banner?>");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
+<main class="service__page">
+  <section class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb__inner">
+        <div class="inner__main">
+          <h1 class="heading_30 slim__heading"><?=$banner_heading_one?></h1>
+          <h2 class="heading_35 primary_color">
+          <?=$banner_heading_two?>
+          </h2>
+          <nav>
+            <ul>
+              <li class="breadcrumb-item">
+                <a href="<?=site_url()?>">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="<?=get_the_permalink(get_the_ID())?>">Services</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Custom Home Building
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service__page__section">
+    <div class="container">
+      <div class="section__width">
+        <div class="row_d">
+        <div class="service__section__menu">
+            <ul class="service__menu">
+              <li>
+                <a href="<?=get_the_permalink(133)?>">
+                  <div>
+                    <span class="heading_25"><?=get_the_title(133)?></span>
+                    <img src="<?=PREMIER_CONTRACTORS_THEME_ASSETS_URI.'images/service__menu__arrow.png'?>" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="<?=get_the_permalink(135)?>" class="active">
+                  <div>
+                    <span class="heading_25"><?=get_the_title(135)?></span>
+                    <img src="<?=PREMIER_CONTRACTORS_THEME_ASSETS_URI.'images/service__menu__arrow.png'?>" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="service__section__details">
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                <?=$your_dream_home_awaits_with_title?>
+                <span class="heading_25 d-block"
+                  ><?=$dc_premier_contractors_llc_title?></span
+                >
+              </h2>
+            </div>
+            <div class="item target__experience">
+              <div class="inner__content">
+                <div class="img">
+                  <img src="<?=PREMIER_CONTRACTORS_THEME_ASSETS_URI.'images/service-page-location.png'?>" alt="" />
+                </div>
+                <div class="text__col">
+                  <h4><?=$location_title?></h4>
+                  <p>
+                    <?=$location?>
+                  </p>
+                </div>
+              </div>
+              <div class="inner__content">
+                <div class="img">
+                  <img src="<?=PREMIER_CONTRACTORS_THEME_ASSETS_URI.'images/experience-star.png'?>" alt="" />
+                </div>
+                <div class="text__col">
+                  <h4><?=$expertise_title?></h4>
+                  <p>
+                    <?=$expertise?>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item heading__a__img">
+              <div class="h4_p a__img_heading">
+                <p>
+                  <?=$after_expertise_textarea_1?>
+                </p>
+              </div>
+              <div class="h4_p a__img_heading">
+                <p>
+                 <?=$after_expertise_textarea_2?>
+                </p>
+              </div>
+              <div class="img">
+                <img src="<?=$page_center_image?>" alt="" />
+              </div>
+            </div>
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                <?=$word_why_before_dc_premier_contractors_llc_title?>
+                <span class="heading_25 d-block"
+                  ><?=$dc_premier_contractors_llc_title?></span
+                >
+              </h2>
+              <div class="h4_p">
+                <h4><?=$experience_title?></h4>
+                <p><?=$experience?></p>
+              </div>
+              <div class="h4_p">
+                <h4><?=$fully_insured_title?></h4>
+                <p><?=$fully_insured?></p>
+              </div>
+              <div class="h4_p">
+                <h4><?=$licensed_title?></h4>
+                <p><?=$licensed?></p>
+              </div>
+              <div class="h4_p">
+                <p class="italic">
+                  <?=$after_license_text?>
+                </p>
+              </div>
+            </div>
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                Our
+                <span class="heading_25 d-block"><?=$services_title?></span>
+              </h2>
+              <div class="renovation_services d-flex">
+                <div class="h4_p">
+                  <span class="transparent__text">01</span>
+                  <h4><?=$custom_home_building_title?></h4>
+                  <p><?=$custom_home_building?></p>
+                </div>
+                <div class="h4_p">
+                  <span class="transparent__text">02</span>
+                  <h4><?=$luxury_home_construction_title?></h4>
+                  <p><?=$luxury_home_construction?></p>
+                </div>
+                <div class="h4_p">
+                  <span class="transparent__text">03</span>
+                  <h4><?=$renovations_title?></h4>
+                  <p><?=$renovations?></p>
+                </div>
+              </div>
+            </div>
+            <div class="item heading__col">
+              <div class="h4_p">
+                <p class="italic">
+                  <?=$our_service_section_last_line?>
+                </p>
+              </div>
+            </div>
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                <?=$addressing_before_our_concern_title?>
+                <span class="heading_25 d-block"><?=$your_concerns_title?></span>
+              </h2>
+              <div class="h4_p">
+                <h4><?=$quality_cost_title?></h4>
+                <p><?=$quality_vs_cost?></p>
+              </div>
+              <div class="h4_p">
+                <h4><?=$timeline_title?></h4>
+                <p>
+                  <?=$timeline?>
+                </p>
+              </div>
+              <div class="h4_p">
+                <h4><?=$communication_title?></h4>
+                <p><?=$communication?></p>
+              </div>
+            </div>
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                <?=$word_what_before_set_us_apart?>
+                <span class="heading_25 d-block"><?=$sets_us_apart_title?></span>
+              </h2>
+              <div class="h4_p">
+                <h4><?=$what_sets_us_apart_quality_title?></h4>
+                <p><?=$what_sets_us_apart_quality?></p>
+              </div>
+              <div class="h4_p">
+                <h4><?=$what_sets_us_apart_warranty?></h4>
+                <p><?=$what_sets_us_apart_warranty?></p>
+              </div>
+              <div class="h4_p">
+                <p class="italic">
+                  <?=$what_sets_us_apart_last_line?>
+                </p>
+              </div>
+            </div>
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                <?=$the_dc_premier_process_title_at_consultation_section?>
+                <span class="heading_25 d-block"><?=$dc_premier_process_title?></span>
+              </h2>
+              <div class="premier__4col">
+                <div class="h4_p">
+                  <h4>1. <?=$premier_process_consultation_title?></h4>
+                  <p><?=$premier_process_consultation?></p>
+                </div>
+                <div class="h4_p">
+                  <h4>2. <?=$premier_process_design_phase_title?></h4>
+                  <p><?=$premier_process_design_phase?></p>
+                </div>
+                <div class="h4_p">
+                  <h4>3. <?=$premier_process_construction_title?></h4>
+                  <p><?=$premier_process_construction?></p>
+                </div>
+                <div class="h4_p">
+                  <h4>4. <?=$premier_process_final_walkthrough_title?></h4>
+                  <p><?=$premier_process_final_walkthrough?></p>
+                </div>
+              </div>
+            </div>
+            <div class="item heading__col d-none">
+              <div class="d-flex att__container">
+                <div class="attention__">
+                  <h2 class="heading_25 text-uppercase">
+                    <?=$attention_first_title?>
+                    <span class="heading_25 d-block"><?=$realtors_second_title?></span>
+                  </h2>
+                  <span class="exclamation__simble">!</span>
+                </div>
+                <div>
+                  <div class="h4_p mt-0">
+                    <h4><?=$high_value_partnership_title?></h4>
+                    <p><?=$attention_realtors_high_value_partnership?></p>
+                  </div>
+                  <div class="h4_p">
+                    <p class="italic">
+                     <?=$attention_realtors_last_line?>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item heading__col">
+              <h2 class="heading_25 text-uppercase">
+                <span class="heading_25 d-block"><?=$financing_and_costs_title?></span>
+              </h2>
+              <div class="h4_p">
+                <h4><?=$no_financing_title?></h4>
+                <p>
+                  <?=$no_financing?>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <?php get_template_part('/template-parts/renovation-page-inc/featured-products'); ?>
+
+  <?php get_template_part('/template-parts/renovation-page-inc/frequently-asked-question'); ?>
+
+ <?php get_template_part('/template-parts/home-page-includes/contact_us'); ?>
+ 
+</main>
+<?php
+get_footer();
